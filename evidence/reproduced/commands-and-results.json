@@ -1,0 +1,91 @@
+{
+  "python": "3.11.18 (main, Nov 11 2026, 00:17:57) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "test_sha256": "aeca521c316908a448f022a0767e4a2a09b342dca6b81697e06bed74fc5a9816",
+  "runs": [
+    {
+      "name": "baseline",
+      "commit": "f5891b3cd4df69f6bd5a3c26ea92310f3a973626",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/keras-team/keras-io/f5891b3cd4df69f6bd5a3c26ea92310f3a973626/scripts/docstrings.py",
+          "sha256": "eb3043648f7d995190219ea61124a33091a65e06e548583fd18e0be090c0c266"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/keras-team/keras-io/f5891b3cd4df69f6bd5a3c26ea92310f3a973626/scripts/render_presets.py",
+          "sha256": "9d1b6b90da2a247024dc74a867102897b957d55a5c69aa2cdf207b82cd82a9a3"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/keras-team/keras-io/f5891b3cd4df69f6bd5a3c26ea92310f3a973626/scripts/hub_master.py",
+          "sha256": "5d0e486b9576e00e87d99a7706a35465d88d488415a1327e5cb92f9fc616962a"
+        }
+      ],
+      "cwd": "C:\\Users\\Hooman\\OneDrive\\Documentos\\Deepextra\\keras-docstring-regression-tests",
+      "argv": [
+        "C:\\Users\\Hooman\\AppData\\Local\\Temp\\keras-docstring-verify-07492fabdc0049658535e947fcd3b2a6\\venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pytest",
+        "tests/test_docstring_rendering.py",
+        "-vv",
+        "--tb=short",
+        "--color=no",
+        "-p",
+        "no:cacheprovider",
+        "--junitxml=C:\\Users\\Hooman\\OneDrive\\Documentos\\Deepextra\\keras-docstring-regression-tests\\evidence\\reproduced\\baseline-junit.xml"
+      ],
+      "environment": {
+        "KERAS_IO_CHECKOUT": "C:\\Users\\Hooman\\AppData\\Local\\Temp\\keras-docstring-sources-bpn58vip\\baseline",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1"
+      },
+      "exit_code": 1,
+      "failed_tests": [
+        "test_injected_prose_is_a_paragraph_not_code",
+        "test_injected_sections_are_recognized"
+      ],
+      "matches_expected": true
+    },
+    {
+      "name": "pr-2423",
+      "commit": "2049298dd41b71c3a5e3ff0290a6681335aa75a9",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/keras-team/keras-io/2049298dd41b71c3a5e3ff0290a6681335aa75a9/scripts/docstrings.py",
+          "sha256": "ba42bf8bc31bd0b484e1fb56e8b6eccc21435c61dd0ada88c8195e34cff18def"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/keras-team/keras-io/2049298dd41b71c3a5e3ff0290a6681335aa75a9/scripts/render_presets.py",
+          "sha256": "9d1b6b90da2a247024dc74a867102897b957d55a5c69aa2cdf207b82cd82a9a3"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/keras-team/keras-io/2049298dd41b71c3a5e3ff0290a6681335aa75a9/scripts/hub_master.py",
+          "sha256": "928a96d5f4b0a3b2d040978fdede4f477f88b3e196b69925704cc99f6d94577e"
+        }
+      ],
+      "cwd": "C:\\Users\\Hooman\\OneDrive\\Documentos\\Deepextra\\keras-docstring-regression-tests",
+      "argv": [
+        "C:\\Users\\Hooman\\AppData\\Local\\Temp\\keras-docstring-verify-07492fabdc0049658535e947fcd3b2a6\\venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pytest",
+        "tests/test_docstring_rendering.py",
+        "-vv",
+        "--tb=short",
+        "--color=no",
+        "-p",
+        "no:cacheprovider",
+        "--junitxml=C:\\Users\\Hooman\\OneDrive\\Documentos\\Deepextra\\keras-docstring-regression-tests\\evidence\\reproduced\\pr-2423-junit.xml"
+      ],
+      "environment": {
+        "KERAS_IO_CHECKOUT": "C:\\Users\\Hooman\\AppData\\Local\\Temp\\keras-docstring-sources-bpn58vip\\pr-2423",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1"
+      },
+      "exit_code": 0,
+      "failed_tests": [],
+      "matches_expected": true
+    }
+  ],
+  "matches_expected": true
+}

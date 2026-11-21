@@ -1,0 +1,24 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.18, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\Hooman\AppData\Local\Temp\keras-docstring-verify-07492fabdc0049658535e947fcd3b2a6\venv\Scripts\python.exe
+rootdir: C:\Users\Hooman\OneDrive\Documentos\Deepextra\keras-docstring-regression-tests
+collecting ... collected 4 items
+
+tests/test_docstring_rendering.py::test_injected_prose_is_a_paragraph_not_code FAILED [ 25%]
+tests/test_docstring_rendering.py::test_injected_sections_are_recognized FAILED [ 50%]
+tests/test_docstring_rendering.py::test_injected_example_preserves_exact_indentation PASSED [ 75%]
+tests/test_docstring_rendering.py::test_normal_docstring_output_is_unchanged PASSED [100%]
+
+================================== FAILURES ===================================
+_________________ test_injected_prose_is_a_paragraph_not_code _________________
+tests\test_docstring_rendering.py:59: in test_injected_prose_is_a_paragraph_not_code
+    assert PROSE in paragraphs
+E   AssertionError: assert 'Images are augmented during training.' in ['A sample layer.']
+____________________ test_injected_sections_are_recognized ____________________
+tests\test_docstring_rendering.py:68: in test_injected_sections_are_recognized
+    assert "Arguments" in labels
+E   AssertionError: assert 'Arguments' in []
+- generated xml file: C:\Users\Hooman\OneDrive\Documentos\Deepextra\keras-docstring-regression-tests\evidence\reproduced\baseline-junit.xml -
+=========================== short test summary info ===========================
+FAILED tests/test_docstring_rendering.py::test_injected_prose_is_a_paragraph_not_code - AssertionError: assert 'Images are augmented during training.' in ['A sample layer.']
+FAILED tests/test_docstring_rendering.py::test_injected_sections_are_recognized - AssertionError: assert 'Arguments' in []
+========================= 2 failed, 2 passed in 0.33s =========================

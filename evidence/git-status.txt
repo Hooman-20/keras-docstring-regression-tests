@@ -1,0 +1,3 @@
+Command: git status --short
+Exit code: 128
+fatal: not a git repository (or any of the parent directories): .git

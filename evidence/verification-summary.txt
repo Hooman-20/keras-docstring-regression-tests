@@ -1,0 +1,14 @@
+README PowerShell block executed verbatim in a fresh temporary Python 3.11.18 venv.
+Interpreter resolution used the existing project-local Python 3.11 runtime read-only.
+No system PATH setting was changed; PATH was adjusted for that process only.
+Baseline: 2 passed, 2 failed. PR #2423: 4 passed. Reproduction script exit: 0.
+All four copied tests are byte-for-byte identical to the original.
+Copied evidence files are byte-for-byte identical to their originals.
+Original test, report, runner, and setup script hashes remain unchanged.
+No original-project files were intentionally written or modified.
+New folder contains no environment, clone, cache, credential file, or Git metadata.
+Temporary upstream downloads were removed by the reproduction script.
+Verification venv remains outside this folder in the OS temporary directory.
+git status --short reports not a Git repository, as expected: Git was not initialized.
+No git add, commit, push, init, remote configuration, or GitHub write was performed.
+Test SHA256: aeca521c316908a448f022a0767e4a2a09b342dca6b81697e06bed74fc5a9816

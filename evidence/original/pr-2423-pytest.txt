@@ -1,0 +1,12 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.18, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\Hooman\OneDrive\Documentos\Deepextra\keras-2422-study\.venv\Scripts\python.exe
+rootdir: C:\Users\Hooman\OneDrive\Documentos\Deepextra\keras-2422-study
+collecting ... collected 4 items
+
+tests/test_docstring_rendering.py::test_injected_prose_is_a_paragraph_not_code PASSED [ 25%]
+tests/test_docstring_rendering.py::test_injected_sections_are_recognized PASSED [ 50%]
+tests/test_docstring_rendering.py::test_injected_example_preserves_exact_indentation PASSED [ 75%]
+tests/test_docstring_rendering.py::test_normal_docstring_output_is_unchanged PASSED [100%]
+
+- generated xml file: C:\Users\Hooman\OneDrive\Documentos\Deepextra\keras-2422-study\evidence\pr-2423-junit.xml -
+============================== 4 passed in 0.20s ==============================
